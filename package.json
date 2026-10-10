@@ -1,7 +1,11 @@
 {
   "name": "maz-technical-task",
+  "version": "1.0.0",
+  "description": "Online store demo for Maz technical task 1",
   "type": "module",
   "private": true,
+  "author": "Alireza Bahrani",
+  "license": "ISC",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
