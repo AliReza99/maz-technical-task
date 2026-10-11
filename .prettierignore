@@ -1,0 +1,9 @@
+build
+coverage
+node_modules
+.nuxt
+.output
+dist
+.nitro
+.cache
+pnpm-lock.yaml
