@@ -9,4 +9,11 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  app: {
+    head: {
+      htmlAttrs: {
+        class: 'antialiased',
+      },
+    },
+  },
 })
