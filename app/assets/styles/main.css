@@ -17,6 +17,14 @@
 }
 
 @font-face {
+  font-family: 'Yekan Bakh';
+  src: url('../fonts/yekan-bakh-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'IRANYekan';
   src: url('../fonts/iranyekan-medium.ttf') format('truetype');
   font-weight: 500;
