@@ -19,6 +19,13 @@ const variants = [
     weightClass: 'font-medium',
   },
   {
+    family: 'Yekan Bakh',
+    token: '--font-sans',
+    familyClass: 'font-sans',
+    weight: 700,
+    weightClass: 'font-bold',
+  },
+  {
     family: 'IRANYekan',
     token: '--font-iran-yekan',
     familyClass: 'font-iran-yekan',
