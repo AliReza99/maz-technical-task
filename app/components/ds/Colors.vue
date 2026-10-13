@@ -4,7 +4,6 @@ interface Swatch {
   token: string
   hex: string
   usage?: string
-  derived?: boolean
 }
 
 const semantic: Swatch[] = [
@@ -22,6 +21,7 @@ const semantic: Swatch[] = [
     hex: '#E9EDF5',
     usage: 'Button and product card border',
   },
+  { name: 'breadcrumb', token: '--color-breadcrumb', hex: '#6783A0', usage: 'Breadcrumb items' },
 ]
 
 const palettes: { name: string; shades: Swatch[] }[] = [
@@ -38,15 +38,15 @@ const palettes: { name: string; shades: Swatch[] }[] = [
     shades: [
       { name: '25', token: '--color-gray-25', hex: '#F5F7FA' },
       { name: '50', token: '--color-gray-50', hex: '#E9EDF5' },
-      { name: '100', token: '--color-gray-100', hex: '#DAE1EB', derived: true },
-      { name: '200', token: '--color-gray-200', hex: '#BDC8D7', derived: true },
-      { name: '300', token: '--color-gray-300', hex: '#9FAFC2', derived: true },
-      { name: '400', token: '--color-gray-400', hex: '#8297AE', derived: true },
+      { name: '100', token: '--color-gray-100', hex: '#DAE1EB' },
+      { name: '200', token: '--color-gray-200', hex: '#BDC8D7' },
+      { name: '300', token: '--color-gray-300', hex: '#9FAFC2' },
+      { name: '400', token: '--color-gray-400', hex: '#8297AE' },
       { name: '500', token: '--color-gray-500', hex: '#647E9A' },
-      { name: '600', token: '--color-gray-600', hex: '#546B83', derived: true },
-      { name: '700', token: '--color-gray-700', hex: '#44576D', derived: true },
+      { name: '600', token: '--color-gray-600', hex: '#546B83' },
+      { name: '700', token: '--color-gray-700', hex: '#44576D' },
       { name: '800', token: '--color-gray-800', hex: '#344456' },
-      { name: '900', token: '--color-gray-900', hex: '#141928', derived: true },
+      { name: '900', token: '--color-gray-900', hex: '#141928' },
     ],
   },
   {
@@ -92,7 +92,6 @@ const palettes: { name: string; shades: Swatch[] }[] = [
           />
           <div class="font-medium text-gray-900">{{ shade.name }}</div>
           <div class="text-gray-500">{{ shade.hex }}</div>
-          <div v-if="shade.derived" class="text-gray-400">derived</div>
         </div>
       </div>
     </div>
