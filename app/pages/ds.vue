@@ -10,6 +10,7 @@ useHead({ title: 'Design System' })
     <DsIcons />
     <DsSocialIcons />
     <DsButtons />
+    <DsProductCard />
     <DsBreadcrumb />
   </main>
 </template>
