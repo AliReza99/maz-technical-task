@@ -7,5 +7,7 @@ useHead({ title: 'Design System' })
     <h1 dir="ltr" class="text-3xl font-medium">Design System</h1>
     <DsTypography />
     <DsColors />
+    <DsIcons />
+    <DsSocialIcons />
   </main>
 </template>
