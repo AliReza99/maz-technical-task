@@ -9,5 +9,6 @@ useHead({ title: 'Design System' })
     <DsColors />
     <DsIcons />
     <DsSocialIcons />
+    <DsButtons />
   </main>
 </template>
