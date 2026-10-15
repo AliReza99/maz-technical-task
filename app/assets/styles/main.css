@@ -80,4 +80,7 @@
   --shadow-card-sm: 0px 2px 3px 0px #00000008;
   --shadow-footer-top: 0px -2px 2px 0px #0000000a;
   --shadow-footer-bottom: 0px 2px 2px 0px #00000014;
+
+  --container-page-tablet: 868px;
+  --container-page: 1112px;
 }
