@@ -1,4 +1,6 @@
 <script setup lang="ts">
+definePageMeta({ layout: 'blank' })
+
 useHead({ title: 'Design System' })
 </script>
 
@@ -12,5 +14,14 @@ useHead({ title: 'Design System' })
     <DsButtons />
     <DsProductCard />
     <DsBreadcrumb />
+    <DsNavbar />
+    <DsFooter />
+    <DsSearchInput />
+    <DsSwitch />
+    <DsRadio />
+    <DsCheckbox />
+    <DsCard />
+    <DsCollapsibleCard />
+    <DsFilterChip />
   </main>
 </template>
