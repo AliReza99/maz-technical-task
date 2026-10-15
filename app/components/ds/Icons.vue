@@ -2,7 +2,9 @@
 import {
   IconAdd,
   IconArrowDown,
+  IconArrowLeft,
   IconArrowLeftS,
+  IconBook,
   IconCallOut,
   IconCategory2,
   IconClose,
@@ -20,7 +22,9 @@ import {
 const icons = [
   { name: 'IconAdd', component: IconAdd },
   { name: 'IconArrowDown', component: IconArrowDown },
+  { name: 'IconArrowLeft', component: IconArrowLeft },
   { name: 'IconArrowLeftS', component: IconArrowLeftS },
+  { name: 'IconBook', component: IconBook },
   { name: 'IconCallOut', component: IconCallOut },
   { name: 'IconCategory2', component: IconCategory2 },
   { name: 'IconClose', component: IconClose },
