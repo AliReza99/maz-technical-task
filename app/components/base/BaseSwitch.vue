@@ -12,7 +12,7 @@ const model = defineModel<boolean>({ default: false })
 </script>
 
 <template>
-  <label class="flex items-center gap-4">
+  <label class="flex items-center gap-4 cursor-pointer">
     <span v-if="label" class="grow text-start text-sm/4 font-medium text-gray-700">{{
       label
     }}</span>
