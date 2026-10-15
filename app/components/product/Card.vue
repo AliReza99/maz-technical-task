@@ -28,7 +28,7 @@ defineEmits<{
       <BaseButton variant="outlined" class="w-full" @click="$emit('action')">
         <slot name="action">
           {{ $t('View details') }}
-          <IconArrowLeftS />
+          <IconArrowLeft />
         </slot>
       </BaseButton>
     </div>
