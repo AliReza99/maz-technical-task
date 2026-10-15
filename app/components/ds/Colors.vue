@@ -21,6 +21,7 @@ const semantic: Swatch[] = [
     hex: '#E9EDF5',
     usage: 'Button and product card border',
   },
+  { name: 'border-dark', token: '--color-border-dark', hex: '#D1DBE8', usage: 'Dividers' },
   { name: 'breadcrumb', token: '--color-breadcrumb', hex: '#6783A0', usage: 'Breadcrumb items' },
 ]
 
@@ -36,6 +37,7 @@ const palettes: { name: string; shades: Swatch[] }[] = [
   {
     name: 'Gray',
     shades: [
+      { name: '15', token: '--color-gray-15', hex: '#F8F9FC' },
       { name: '25', token: '--color-gray-25', hex: '#F5F7FA' },
       { name: '50', token: '--color-gray-50', hex: '#E9EDF5' },
       { name: '100', token: '--color-gray-100', hex: '#DAE1EB' },
@@ -44,7 +46,7 @@ const palettes: { name: string; shades: Swatch[] }[] = [
       { name: '400', token: '--color-gray-400', hex: '#8297AE' },
       { name: '500', token: '--color-gray-500', hex: '#647E9A' },
       { name: '600', token: '--color-gray-600', hex: '#546B83' },
-      { name: '700', token: '--color-gray-700', hex: '#44576D' },
+      { name: '700', token: '--color-gray-700', hex: '#445A74' },
       { name: '800', token: '--color-gray-800', hex: '#344456' },
       { name: '900', token: '--color-gray-900', hex: '#141928' },
     ],
