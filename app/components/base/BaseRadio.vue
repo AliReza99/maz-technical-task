@@ -29,6 +29,7 @@ const model = defineModel<string | number>()
       class="peer sr-only"
     />
     <span
+      aria-hidden="true"
       class="flex size-5 shrink-0 items-center justify-center rounded-full border-2 border-gray-200 transition-colors peer-checked:border-primary peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-primary after:size-2.5 after:scale-0 after:rounded-full after:bg-primary after:transition-transform peer-checked:after:scale-100"
     />
     <span

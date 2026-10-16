@@ -22,17 +22,19 @@ function clear() {
     <IconSearch
       class="size-4 shrink-0 text-fg-muted transition-colors group-focus-within:text-primary group-hover:text-primary"
     />
-    <span class="ms-[13px] me-[17px] h-6 w-px shrink-0 bg-border-dark" />
+    <span aria-hidden="true" class="ms-[13px] me-[17px] h-6 w-px shrink-0 bg-border-dark" />
     <input
       ref="input"
       v-model="model"
       type="search"
       :placeholder="placeholder"
+      :aria-label="placeholder ?? $t('Search')"
       class="h-full min-w-0 flex-1 bg-transparent text-sm text-fg outline-none placeholder:text-fg-muted [&::-webkit-search-cancel-button]:hidden"
     />
     <button
       v-if="model"
       type="button"
+      :aria-label="$t('Clear search')"
       class="ms-2 flex shrink-0 cursor-pointer text-fg-muted"
       @click="clear"
     >

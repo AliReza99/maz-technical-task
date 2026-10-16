@@ -10,7 +10,10 @@ const links = [
 </script>
 
 <template>
-  <nav class="h-30 rounded-b-2xl bg-white px-6 shadow-footer-bottom backdrop-blur-2xl">
+  <nav
+    :aria-label="$t('Main navigation')"
+    class="h-30 rounded-b-2xl bg-white px-6 shadow-footer-bottom backdrop-blur-2xl"
+  >
     <div
       class="mx-auto grid h-full md:max-w-page-tablet lg:max-w-page grid-cols-[1fr_auto_1fr] items-center"
     >

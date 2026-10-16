@@ -4,6 +4,8 @@ defineProps<{
 }>()
 
 const open = defineModel<boolean>('open', { default: true })
+
+const contentId = useId()
 </script>
 
 <template>
@@ -11,12 +13,15 @@ const open = defineModel<boolean>('open', { default: true })
     <button
       type="button"
       class="flex w-full cursor-pointer items-center justify-between gap-2 text-start"
+      :aria-expanded="open"
+      :aria-controls="contentId"
       @click="open = !open"
     >
       <span class="font-sans text-[13px]/4 font-medium text-gray-700">{{ title }}</span>
       <IconArrowDown class="size-4 shrink-0 text-gray-500" />
     </button>
     <div
+      :id="contentId"
       class="grid transition-[grid-template-rows] duration-200 ease-out"
       :class="open ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'"
       :inert="!open"

@@ -12,6 +12,7 @@ const emit = defineEmits<{ remove: [] }>()
     <span>{{ label }}</span>
     <button
       type="button"
+      :aria-label="$t('Remove filter')"
       class="flex cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
       @click="emit('remove')"
     >
