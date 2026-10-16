@@ -12,7 +12,7 @@ defineProps<{
 <template>
   <nav :aria-label="$t('Breadcrumb')">
     <ol
-      class="flex flex-wrap items-center gap-2 font-iran-yekan text-sm/4 font-bold text-breadcrumb"
+      class="flex min-h-6 flex-wrap items-center gap-2 font-iran-yekan text-sm/4 font-bold text-breadcrumb"
     >
       <li class="flex">
         <NuxtLink to="/" :aria-label="$t('Home')">
