@@ -95,3 +95,8 @@
     max-width: var(--container-page);
   }
 }
+
+html {
+  background-color: var(--color-page);
+}
+

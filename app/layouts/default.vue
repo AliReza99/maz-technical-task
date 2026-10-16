@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-page">
+  <div class="min-h-screen">
     <BaseNavbar />
     <slot />
     <BaseFooter />
