@@ -46,9 +46,11 @@ const socialIconLinks = computed(() => [
 
 <template>
   <footer>
-    <div class="rounded-t-2xl bg-white px-6 py-10 shadow-footer-top">
-      <div class="page-container flex justify-between px-9">
-        <div class="flex items-end pb-[17px]">
+    <div class="rounded-t-2xl bg-white pt-[159px] pb-[44px] shadow-footer-top md:py-10">
+      <div
+        class="page-container grid grid-cols-2 gap-x-4 gap-y-[68px] max-md:pr-9 md:flex md:px-13 md:justify-between"
+      >
+        <div class="hidden items-end pb-[17px] md:flex">
           <p class="text-[13px] leading-6 font-medium text-gray-700">
             {{ $t("We're available 7 days a week, 8 AM to midnight") }}
           </p>
@@ -92,7 +94,7 @@ const socialIconLinks = computed(() => [
       </div>
     </div>
     <div class="bg-white">
-      <div class="rounded-t-2xl bg-gray-15 pt-10 pb-6 shadow-footer-bottom">
+      <div class="rounded-t-2xl bg-gray-15 pt-10 pb-[41px] shadow-footer-bottom md:pb-6">
         <div class="page-container relative flex flex-col items-center gap-4">
           <p class="max-w-[320px] text-center text-[13px] leading-6 text-gray-700">
             {{ $t('All rights reserved. Any copying is subject to legal action.') }}
@@ -108,7 +110,7 @@ const socialIconLinks = computed(() => [
             </li>
           </ul>
 
-          <div class="absolute inset-e-0 top-1/2 flex -translate-y-1/2 gap-4">
+          <div class="flex gap-4 md:absolute md:inset-e-4 md:top-1/2 md:-translate-y-1/2">
             <img
               src="/images/samandehi.png"
               alt="Samandehi badge"
