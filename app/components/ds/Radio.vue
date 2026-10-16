@@ -18,8 +18,13 @@ const sort = ref('quantity-asc')
         value="quantity-desc"
         :label="$t('Quantity: high to low')"
       />
-      <BaseRadio v-model="sort" name="sort" value="rank-desc" :label="$t('Rank: high to low')" />
-      <BaseRadio v-model="sort" name="sort" value="rank-asc" :label="$t('Rank: low to high')" />
+      <BaseRadio
+        v-model="sort"
+        name="sort"
+        value="rating-desc"
+        :label="$t('Rating: high to low')"
+      />
+      <BaseRadio v-model="sort" name="sort" value="rating-asc" :label="$t('Rating: low to high')" />
     </div>
   </section>
 </template>
