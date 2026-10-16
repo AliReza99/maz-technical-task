@@ -34,7 +34,7 @@ async function fetchAllProducts() {
   const response = await apiFetch('/products')
   const result = z.array(apiProductSchema).safeParse(response)
   if (!result.success) {
-    throw createError({ statusCode: 502, statusMessage: 'Invalid response from the API' })
+    throw createError({ status: 502, statusText: 'Invalid response from the API' })
   }
   return result.data.map(toProduct)
 }
@@ -43,7 +43,7 @@ async function fetchProductById(id: number) {
   const response = await apiFetch(`/products/${id}`)
   const result = apiProductSchema.safeParse(response)
   if (!result.success) {
-    throw createError({ statusCode: 502, statusMessage: 'Invalid response from the API' })
+    throw createError({ status: 502, statusText: 'Invalid response from the API' })
   }
   return toProduct(result.data)
 }
