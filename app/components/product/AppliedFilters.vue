@@ -9,7 +9,10 @@ const hasAppliedFilters = computed(
 </script>
 
 <template>
-  <BaseCard v-if="hasAppliedFilters" class="flex items-center justify-between gap-4 pr-6">
+  <BaseCard
+    v-if="hasAppliedFilters"
+    class="flex items-center justify-between gap-4 pr-6 max-md:hidden"
+  >
     <h2 class="text-sm/4 font-medium text-[#253343]">{{ $t('Applied filters') }}</h2>
     <div class="flex flex-wrap gap-3">
       <BaseFilterChip v-if="search" :label="search" @remove="search = ''">

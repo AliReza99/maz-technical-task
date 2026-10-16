@@ -10,7 +10,7 @@ defineProps<{
 <template>
   <NuxtLink
     :to="to"
-    class="group block w-full max-md:pointer-events-none max-w-[263px] rounded-3xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+    class="group block w-full max-md:pointer-events-none rounded-3xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
   >
     <article
       class="flex flex-col gap-4 rounded-3xl border border-border bg-white px-2 pt-2 pb-3 shadow-card"
@@ -18,7 +18,7 @@ defineProps<{
       <img
         :src="image"
         :alt="imageAlt ?? title"
-        class="aspect-square max-h-42.5 w-full rounded-2xl bg-white object-contain"
+        class="aspect-square max-h-42.5 w-full rounded-2xl bg-white object-contain max-md:min-h-90"
         loading="lazy"
       />
       <h3

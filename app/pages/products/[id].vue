@@ -12,7 +12,7 @@ if (error.value || !product.value) {
 </script>
 
 <template>
-  <main v-if="product" class="page-container pt-6 pb-17">
+  <main v-if="product" class="page-container pt-6 pb-17 max-md:pt-6.5 max-md:pb-9.5">
     <ProductBreadcrumb :product="product" />
     <div class="mt-6 flex flex-col gap-6">
       <ProductOverview :product="product" />

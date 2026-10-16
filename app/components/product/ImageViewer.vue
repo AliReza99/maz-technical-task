@@ -21,7 +21,7 @@ function openFullscreen() {
     />
     <button
       type="button"
-      class="absolute top-4 right-4 flex size-10 cursor-pointer items-center justify-center rounded-[13px] bg-black/50 text-white backdrop-blur-[1px]"
+      class="absolute top-2 right-2 flex size-10 cursor-pointer items-center justify-center rounded-[13px] bg-black/50 text-white backdrop-blur-[1px]"
       :aria-label="$t('View image fullscreen')"
       @click="openFullscreen"
     >

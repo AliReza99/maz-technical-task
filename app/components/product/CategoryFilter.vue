@@ -6,7 +6,7 @@ const { data } = useProductsFromQuery()
 
 <template>
   <BaseCollapsibleCard :title="$t('Category')">
-    <ul class="flex flex-col gap-4">
+    <ul class="flex flex-col gap-4 pl-0.75">
       <li
         v-for="option in data?.categories"
         :key="option.name"
