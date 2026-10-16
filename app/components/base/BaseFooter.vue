@@ -47,7 +47,7 @@ const socialIconLinks = computed(() => [
 <template>
   <footer>
     <div class="rounded-t-2xl bg-white px-6 py-10 shadow-footer-top">
-      <div class="mx-auto flex md:max-w-page-tablet lg:max-w-page justify-between px-9">
+      <div class="page-container flex justify-between px-9">
         <div class="flex items-end pb-[17px]">
           <p class="text-[13px] leading-6 font-medium text-gray-700">
             {{ $t("We're available 7 days a week, 8 AM to midnight") }}
@@ -93,9 +93,7 @@ const socialIconLinks = computed(() => [
     </div>
     <div class="bg-white">
       <div class="rounded-t-2xl bg-gray-15 pt-10 pb-6 shadow-footer-bottom">
-        <div
-          class="relative mx-auto flex md:max-w-page-tablet lg:max-w-page flex-col items-center gap-4"
-        >
+        <div class="page-container relative flex flex-col items-center gap-4">
           <p class="max-w-[320px] text-center text-[13px] leading-6 text-gray-700">
             {{ $t('All rights reserved. Any copying is subject to legal action.') }}
           </p>
