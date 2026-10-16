@@ -100,3 +100,6 @@ html {
   background-color: var(--color-page);
 }
 
+html:has(dialog[open]) {
+  overflow: hidden;
+}
