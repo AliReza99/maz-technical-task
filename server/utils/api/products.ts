@@ -41,6 +41,10 @@ async function fetchAllProducts() {
 
 async function fetchProductById(id: number) {
   const response = await apiFetch(`/products/${id}`)
+  // the API answers 200 with an empty body for unknown ids
+  if (!response) {
+    throw createError({ status: 404, statusText: 'Product not found' })
+  }
   const result = apiProductSchema.safeParse(response)
   if (!result.success) {
     throw createError({ status: 502, statusText: 'Invalid response from the API' })
