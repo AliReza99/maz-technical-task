@@ -1,19 +1,48 @@
 {
   "name": "maz-technical-task",
+  "version": "1.0.0",
+  "description": "Online store demo for Maz technical task 1",
   "type": "module",
   "private": true,
+  "author": "Alireza Bahrani",
+  "license": "ISC",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --host",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "nuxt typecheck",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky",
+    "pre-commit": "pnpm format:check && pnpm lint && pnpm typecheck"
   },
   "dependencies": {
     "@nuxt/eslint": "1.17.0",
+    "@nuxtjs/i18n": "^10.6.0",
+    "@tailwindcss/vite": "^4.3.3",
     "eslint": "^10.12.0",
     "nuxt": "^4.6.0",
+    "tailwindcss": "^4.3.3",
     "vue": "^3.5.43",
-    "vue-router": "^5.3.1"
-  }
+    "vue-router": "^5.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "prettier": "3.9.10",
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.13"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.9.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.9.0"
 }
