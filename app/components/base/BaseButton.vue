@@ -8,8 +8,9 @@ const props = withDefaults(
     variant?: Variant
     to?: string
     type?: 'button' | 'submit' | 'reset'
+    as?: 'button' | 'span'
   }>(),
-  { variant: 'contained', to: undefined, type: 'button' }
+  { variant: 'contained', to: undefined, type: 'button', as: 'button' }
 )
 
 const variantClasses: Record<Variant, string> = {
@@ -24,9 +25,9 @@ const variantClasses: Record<Variant, string> = {
 
 <template>
   <component
-    :is="props.to ? NuxtLink : 'button'"
+    :is="props.to ? NuxtLink : props.as"
     :to="props.to"
-    :type="props.to ? undefined : props.type"
+    :type="props.to || props.as !== 'button' ? undefined : props.type"
     :class="variantClasses[props.variant]"
     class="inline-flex items-center justify-center text-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary [&_svg]:size-4 [&_svg]:shrink-0"
   >
