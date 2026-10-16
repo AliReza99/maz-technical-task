@@ -5,8 +5,9 @@ export type ProductListParams = {
   available?: boolean
 }
 
-export function useProducts(params: MaybeRefOrGetter<ProductListParams>) {
+export function useProducts(params: MaybeRefOrGetter<ProductListParams> = {}) {
   return useFetch('/api/products', {
     query: computed(() => toValue(params)),
+    dedupe: 'defer',
   })
 }
