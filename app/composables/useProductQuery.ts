@@ -45,6 +45,10 @@ export function useProductQuery() {
     set: (value: boolean) => update({ available: value ? 'true' : undefined }),
   })
 
+  const appliedFiltersCount = computed(
+    () => (search.value ? 1 : 0) + (onlyAvailable.value ? 1 : 0) + categories.value.length
+  )
+
   function removeCategory(name: string) {
     categories.value = categories.value.filter((category) => category !== name)
   }
@@ -53,5 +57,13 @@ export function useProductQuery() {
     return update({ q: undefined, category: undefined, available: undefined })
   }
 
-  return { search, sort, categories, onlyAvailable, removeCategory, clearFilters }
+  return {
+    search,
+    sort,
+    categories,
+    onlyAvailable,
+    appliedFiltersCount,
+    removeCategory,
+    clearFilters,
+  }
 }
