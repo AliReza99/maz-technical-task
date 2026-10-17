@@ -1,3 +1,9 @@
+<script setup lang="ts">
+const { t } = useI18n()
+
+useHead({ title: () => t('Store catalog') })
+</script>
+
 <template>
   <main class="page-container pt-6 pb-11.5 grid md:grid-cols-[267px_1fr] gap-6">
     <ProductFilters />
