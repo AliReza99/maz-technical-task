@@ -2,12 +2,16 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint', '@nuxtjs/i18n'],
+  modules: ['@nuxt/eslint', '@nuxtjs/i18n', '@nuxt/image'],
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   css: ['~/assets/styles/main.css'],
   runtimeConfig: {
     apiBaseUrl: '',
+  },
+  image: {
+    domains: ['fakestoreapi.com'],
+    ipx: { maxAge: 60 * 60 * 24 * 30 },
   },
   vite: {
     plugins: [tailwindcss()],

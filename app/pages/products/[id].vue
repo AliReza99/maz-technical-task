@@ -3,9 +3,12 @@ const route = useRoute()
 
 const { data: product, error } = await useProduct(() => String(route.params.id))
 if (error.value || !product.value) {
+  const status = error.value?.status ?? 404
+  const isNotFound = status === 404 || status === 400
   throw createError({
-    status: error.value?.status ?? 404,
+    status: isNotFound ? 404 : status,
     statusText: error.value?.statusText ?? 'Product not found',
+    data: isNotFound ? { title: 'Product not found' } : undefined,
     fatal: true,
   })
 }

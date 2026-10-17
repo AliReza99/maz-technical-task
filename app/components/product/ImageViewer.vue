@@ -4,19 +4,22 @@ defineProps<{
   alt: string
 }>()
 
-const imageRef = useTemplateRef<HTMLImageElement>('image')
+const imageRef = useTemplateRef('image')
 
 function openFullscreen() {
-  imageRef.value?.requestFullscreen()
+  imageRef.value?.imgEl?.requestFullscreen()
 }
 </script>
 
 <template>
   <div class="relative">
-    <img
+    <NuxtImg
       ref="image"
       :src="src"
       :alt="alt"
+      width="640"
+      densities="x1 x2"
+      format="webp"
       class="h-[310px] w-full rounded-2xl bg-white object-contain [&:fullscreen]:rounded-none"
     />
     <button

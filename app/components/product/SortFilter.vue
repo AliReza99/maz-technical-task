@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const sortLabel = useSortLabel()
 const { sort } = useProductQuery()
+const name = useId()
 </script>
 
 <template>
@@ -10,7 +11,7 @@ const { sort } = useProductQuery()
         v-for="option in productSorts"
         :key="option"
         v-model="sort"
-        name="sort"
+        :name="name"
         :value="option"
         :label="sortLabel(option)"
       />

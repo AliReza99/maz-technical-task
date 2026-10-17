@@ -9,7 +9,6 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev --host",
-    "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "format": "prettier --write .",
@@ -22,6 +21,7 @@
   },
   "dependencies": {
     "@nuxt/eslint": "1.17.0",
+    "@nuxt/image": "^2.1.0",
     "@nuxtjs/i18n": "^10.6.0",
     "@tailwindcss/vite": "^4.3.3",
     "eslint": "^10.12.0",

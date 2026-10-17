@@ -15,9 +15,12 @@ defineProps<{
     <article
       class="flex flex-col gap-4 rounded-3xl border border-border bg-white px-2 pt-2 pb-3 shadow-card"
     >
-      <img
+      <NuxtImg
         :src="image"
         :alt="imageAlt ?? title"
+        width="360"
+        densities="x1 x2"
+        format="webp"
         class="aspect-square max-h-42.5 w-full rounded-2xl bg-white object-contain max-md:min-h-90"
         loading="lazy"
       />
