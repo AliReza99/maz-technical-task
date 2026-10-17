@@ -9,7 +9,6 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev --host",
-    "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "format": "prettier --write .",
